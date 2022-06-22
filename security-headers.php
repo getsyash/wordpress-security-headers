@@ -15,7 +15,7 @@ function wordpress_security_headers( $headers ) {
     $headers['Content-Security-Policy'] = 'script-src \'self\'';
     $headers['Referrer-Policy'] = 'no-referrer-when-downgrade';
     
-    $headers['Permissions-Policy'] = 'geolocation=(self "https://stage-wp.cottrelltrailers.com/"), microphone=()';
+    $headers['Permissions-Policy'] = 'geolocation=(self "home_url()"), microphone=()';
     
     $headers['X-Content-Security-Policy'] = 'default-src \'self\'; script-src \'self\';';
 
